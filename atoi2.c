@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int atoi2(char x[]){
 int i = 0, cont = 0, c = 0, temp = 0;
@@ -9,6 +10,11 @@ int i = 0, cont = 0, c = 0, temp = 0;
     }
     while (1){
         if (x[i] == '.'){
+            cont++;
+            return 0;
+            break;
+        }
+        else if(x[i] - '0' > 31 && x[i] - '0' < 127){
             cont++;
             return 0;
             break;
@@ -27,7 +33,8 @@ int i = 0, cont = 0, c = 0, temp = 0;
 }
 
 int main(){
-    char lie[] = "342424";
-    printf("%d", atoi2(lie));
+    char lie[1024];
+    scanf("%s", lie);
+    printf("%d\n", atoi2(lie));
     return 0;
 }
