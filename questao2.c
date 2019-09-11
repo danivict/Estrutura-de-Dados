@@ -20,6 +20,5 @@ int main(){
     scanf("%s %c", string, &z);
     p = strrchr2(string, z);
     printf(p);
-    //printf("%c", strrchr(string, z));
     return 0;
 }
