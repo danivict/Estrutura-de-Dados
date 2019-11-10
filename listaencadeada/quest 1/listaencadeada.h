@@ -19,4 +19,4 @@ int isEmpty(list *l); /* verifica se a lista esta vazia
 
 void removeBack(list *l);
 
-int size(list l); // quantidade de elementos da lista
+int size(list *l); // quantidade de elementos da lista
