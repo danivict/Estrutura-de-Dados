@@ -1,6 +1,7 @@
 #include <stdlib.h>
 
-typedef struct no {
+typedef struct no
+{
     int valor;
     int coluna;
     struct no *next;
@@ -8,7 +9,8 @@ typedef struct no {
 
 typedef node *pont;
 
-typedef struct {
+typedef struct
+{
     pont *begin;
     int linhas;
     int colunas;
@@ -16,8 +18,8 @@ typedef struct {
 } matriz;
 
 int inserir(matriz *m, int lin, int col, int v);
-    // inserir o valor "default" para exclusao
+// inserir o valor "default" para exclusao
 
 int acess(matriz *m, int lin, int col);
 
-matriz *cria_matriz(int lin, int col, int def );
+matriz *cria_matriz(int lin, int col, int def);
