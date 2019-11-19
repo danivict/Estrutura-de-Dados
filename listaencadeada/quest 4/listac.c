@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-list *createlist()
+list *createlist()  
 {
     list *l = (list *)malloc(sizeof(list));
     l->begin = NULL;
