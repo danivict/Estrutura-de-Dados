@@ -28,7 +28,7 @@ int pop(pilha *p)
     int ret;
     if (p->topo > 0)
     {
-        int aux = p->vet[p->topo - 1];
+        ret = p->vet[p->topo - 1];
         p->topo--;
     }
     return ret;
