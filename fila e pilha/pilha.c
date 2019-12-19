@@ -12,9 +12,10 @@ pilha *cria_pilha()
 {
     pilha *p = (pilha *)malloc(sizeof(pilha));
     p->topo = 0;
+    return p;
 }
 
-int push(pilha *p, int v)
+void push(pilha *p, int v)
 {
     if (p->topo < max)
     {
